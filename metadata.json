@@ -1,0 +1,6 @@
+{
+  "name": "Nutribarrio v1.0.2 Pro",
+  "description": "Planificación nutricional y control estricto de proteína diaria con insumos de la canasta básica mexicana. Desarrollado por Ing. Joel Roldán Gómez.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

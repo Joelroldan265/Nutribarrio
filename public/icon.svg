@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0a09" />
+      <stop offset="50%" stop-color="#1c1917" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="amber-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background base for full bleed & maskable compliance -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+
+  <!-- Inner border ring -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#27272a" stroke-width="3" opacity="0.6" />
+
+  <!-- Safe Zone Graphic (centered in 80% area) -->
+  <g transform="translate(256, 256)">
+    <!-- Ambient subtle glow behind -->
+    <circle cx="0" cy="0" r="140" fill="#10b981" opacity="0.12" filter="url(#glow)" />
+
+    <!-- Stylized Plate / Shield Base -->
+    <circle cx="0" cy="0" r="130" fill="#18181b" stroke="url(#emerald-grad)" stroke-width="8" />
+
+    <!-- Nutrition Target Ring -->
+    <circle cx="0" cy="0" r="105" fill="none" stroke="#27272a" stroke-width="4" stroke-dasharray="6 6" />
+
+    <!-- Stylized Dumbbell / Protein Bar Bell in center -->
+    <!-- Center bar -->
+    <rect x="-85" y="-12" width="170" height="24" rx="12" fill="#e4e4e7" />
+    
+    <!-- Weight plates left -->
+    <rect x="-105" y="-45" width="22" height="90" rx="9" fill="url(#emerald-grad)" />
+    <rect x="-122" y="-35" width="14" height="70" rx="6" fill="#047857" />
+
+    <!-- Weight plates right -->
+    <rect x="83" y="-45" width="22" height="90" rx="9" fill="url(#emerald-grad)" />
+    <rect x="108" y="-35" width="14" height="70" rx="6" fill="#047857" />
+
+    <!-- Central Nutritive Leaf & Golden Seed / Flame Emblem -->
+    <g transform="translate(0, -30)">
+      <!-- Leaf representing natural food from tianguis / campo -->
+      <path d="M0,45 C-35,15 -35,-40 0,-65 C35,-40 35,15 0,45 Z" fill="url(#emerald-grad)" />
+      <!-- Central vein -->
+      <path d="M0,35 L0,-50" stroke="#064e3b" stroke-width="4" stroke-linecap="round" />
+      <!-- Golden Kernel / Egg / Macro yolk at base -->
+      <circle cx="0" cy="8" r="16" fill="url(#amber-grad)" stroke="#18181b" stroke-width="3" filter="url(#glow)" />
+    </g>
+
+    <!-- Version badge accent "PRO" at bottom -->
+    <rect x="-42" y="58" width="84" height="24" rx="12" fill="url(#amber-grad)" />
+    <text x="0" y="74" fill="#1c1917" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="2">v1.0.2</text>
+  </g>
+</svg>

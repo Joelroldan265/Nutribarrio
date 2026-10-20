@@ -1,0 +1,44 @@
+{
+  "id": "/",
+  "name": "Nutribarrio - Control Nutricional Pro",
+  "short_name": "Nutribarrio",
+  "description": "Planificación nutricional y control estricto de proteína diaria con insumos de la canasta básica mexicana. Desarrollado por Ing. Joel Roldán Gómez.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0c0a09",
+  "theme_color": "#059669",
+  "lang": "es-MX",
+  "categories": ["health", "fitness", "food", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Menú de Hoy",
+      "short_name": "Hoy",
+      "description": "Ver menú diario y avance de proteína",
+      "url": "/?tab=hoy",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Canasta Básica",
+      "short_name": "Mercado",
+      "description": "Lista de compras del tianguis",
+      "url": "/?tab=canasta",
+      "icons": [{ "src": "/icon.svg", "sizes": "192x192" }]
+    }
+  ]
+}
